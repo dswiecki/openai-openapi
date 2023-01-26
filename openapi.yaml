@@ -288,6 +288,8 @@ paths:
 
   /images/generations:
     post:
+      security:
+        - headerConfig: []
       operationId: createImage
       tags:
       - OpenAI
@@ -3129,8 +3131,6 @@ components:
       type: apiKey
       name: authorization
       in: header
-  security:
-    - headerConfig: [ ]
 
 x-oaiMeta:
   groups:
