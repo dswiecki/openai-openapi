@@ -3124,6 +3124,13 @@ components:
         - created_at
         - level
         - message
+  securitySchemes:
+    headerConfig:
+      type: apiKey
+      name: authorization
+      in: header
+  security:
+    - headerConfig: [ ]
 
 x-oaiMeta:
   groups:
